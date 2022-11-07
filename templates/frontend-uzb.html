@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block main %}
+    
+    <!--====== Page Banner Start ======-->
+
+    <section class="page-banner">
+        <div class="page-banner-bg bg_cover" style="background-image: url({{url_for ('static', filename='images/page-banner.webp')}});">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h2 class="title">Frontend</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Page Banner Ends ======-->
+
+    <!--====== Courses Details Start ======-->
+
+    <section class="courses-details pb-100">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-lg-9">
+                    <div class="courses-details-content mt-50">
+                        <img src="{{url_for ('static', filename='images/courses-details.webp')}}" width="845" height="533" alt="Course Details">
+
+                        <h2 class="title">Frontend</h2>
+
+                        <p>Salom va Front End Web Development Ultimate Course 2022 ga xush kelibsiz
+                        
+                            Men siz instruktor Javohir Kubayevman va men sizni ushbu kursda olib boraman
+                            
+                            Siz har doim kodlashni o'rganishni xohlaganmisiz, lekin qaerdan boshlashni bilmayapsizmi?
+                            
+                            Ajoyib veb-saytlar yaratishni va o'z g'oyalaringizni hayotga tatbiq etishni xohlaysizmi?
+                            
+                            Unda Front End Web Development Ultimate Course 2022 siz uchun!
+                            
+                            Dasturlash 2022 yilda eng ko'p talab qilinadigan mahoratdir.
+                            
+                            Kurs asoslar bilan boshlanadi.</p>
+
+                        <h5 class="sub-title">
+                            Kurs haqida umumiy ma'lumot
+                            </h5>
+
+                        <p>Ushbu kurs Javascript asosidagi front-end ilovalarni ishlab chiqishni, xususan, React kutubxonasini o'rganadi. Ushbu kurs React ilovasini ishlab chiqish uchun JavaScript ES6 dan foydalanadi. Siz ham tanishtirasiz
+                            Bootstrap 5-ga asoslangan sezgir UI dizayni uchun Reactstrap-dan foydalanish. Siz Reactning turli jihatlari bilan tanishasiz
+                            komponentlar. Siz React router va undan bir sahifali ilovalarni ishlab chiqishda foydalanish haqida bilib olasiz. Siz ham o'rganasiz
+                            boshqariladigan shakllarni loyihalash haqida. Siz Flux arxitekturasi va Redux bilan tanishasiz. Siz turli xil narsalarni o'rganasiz
+                            Redux aspektlari va undan React-Redux quvvatiga ega ilovalarni ishlab chiqish uchun foydalaning. Keyin Fetch uchun foydalanishni o'rganasiz
+                            mijoz-server aloqasi va server tomonida REST API-dan foydalanish. React animatsiyani qo'llab-quvvatlash orqali tezkor sayohat va
+                            test sinovlari kursni yakunlaydi. Bootstrap bo'yicha mutaxassislik bo'yicha oldingi kursni tugatgan bo'lishingiz kerak
+                            5 yoki ushbu kursni boshqarish uchun Bootstrap 5-da ishlaydigan bilimga ega bo'ling. Bundan tashqari, yaxshi ishlaydigan bilim
+                            JavaScript, ayniqsa ES 6 tavsiya etiladi.</p>
+
+                    </div>
+
+  
+                </div>
+                <div class="col-lg-3">
+                    <div class="courses-sidebar pt-20">
+                        <div class="courses-features mt-30">
+                            <div class="sidebar-title">
+                                <h4 class="title">
+                                    Kurs ma'limotlari</h4>
+                            </div>
+                            <ul class="courses-features-items">
+                                <li>Narx <strong>480 000 so'm</strong></li>
+                                <li>Davomiylik <strong>6 months</strong></li>
+                                <li>Proyektlar <strong>20+</strong></li>
+                                <li>Viktorinalar <strong>4</strong></li>
+                                <li>
+                                    Maksimal qayta qabul qilish <strong>5</strong></li>
+                                <li>Reyting <strong>4.9(20 sharhlar)</strong></li>
+                            </ul>
+                            <div class="sidebar-btn">
+                                <a class="main-btn" href="./register-uzb.html">Kursga Yozilish</a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="courses-sidebar-banner mt-30">
+                            <a href="#">
+                                <img src="static/images/banner.webp" width="270" height="310" alt="Banner">
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

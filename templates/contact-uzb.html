@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <!--====== Page Banner Start ======-->
+
+    <section class="page-banner">
+        <div class="page-banner-bg bg_cover" style="background-image: url({{url_for ('static', filename='images/page-banner.webp')}});">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h2 class="title">ALoqa</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Page Banner Ends ======-->
+
+    <!--====== Contact Start ======-->
+    
+    <section class="contact-area pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-contact-info mt-30">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h5 class="title">Adres</h5>
+                            <p> 35 A, Mirzo Ulugbek ko'chasi, Samarkand, Uzbekistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-contact-info mt-30">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h5 class="title">Telefon</h5>
+                            <p><a href="tel:+998999413030">+998(99) 941-30-30</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-contact-info mt-30">
+                        <div class="info-icon">
+                            <i class="far fa-globe"></i>
+                        </div>
+                        <div class="info-content">
+                            <h5 class="title">Sayt</h5>
+                            <p><a href="mailto://info@example.com">info@itschoolsam.uz</a></p>
+                            <p><a href="http://www.itschoolsam.uz/">www.itschoolsam.uz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-title text-center">
+                            <h3 class="title">Aloqaga chiqing</h3>
+                            <p>Mana bizning tadbir jadvalimiz, unda siz ushbu tadbir haqida vaqt jadvali haqida ma'lumot olishingiz mumkin, shuning uchun vaqt va jadvalingizni boshqarish siz uchun juda oson.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-form-wrapper">
+                            <form id="contact-form" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-form">
+                                            <input type="text" name="name" placeholder="Ism">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-form">
+                                            <input type="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-form">
+                                            <input type="text" name="phone" placeholder="Telefon">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-form">
+                                            <input type="text" name="subject" placeholder="Mavzu">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="single-form">
+                                            <textarea name="message" placeholder="Izoh..."></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- <p class="form-message"></p> -->
+                                    <div class="col-md-12">
+                                        <div class="single-form text-center">
+                                            <button class="main-btn">Yuborish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Contact Ends ======-->
+{% endblock %}

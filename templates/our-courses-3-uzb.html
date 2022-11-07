@@ -1,0 +1,493 @@
+{% extends "base.html" %}
+
+{% block main %}
+    
+    <!--====== Page Banner Start ======-->
+
+    <section class="page-banner">
+        <div class="page-banner-bg bg_cover" style="background-image: url(../static/images/page-banner.webp);">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h2 class="title">Bizning Kuraslar</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Page Banner Ends ======-->
+
+    <!--====== Top Course Start ======-->
+    
+    <section class="top-courses-area pb-100">
+        <div class="container">
+            <div class="tab-content" >
+                <div class="tab-pane fade show active" id="grid">
+                    <div class="courses-wrapper wrapper-2">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('backend_course_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-5.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('courses_page')}}" class="category">#IT</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('backend_course_page')}}">Backend</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 6 oy</span></p>
+                                                <p class="fee">Narx: <span> 480 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./foundation-uzb.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('frontend_course_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-6.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('frontend_course_page')}}" class="category">#IT</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('frontend_course_page')}}">Frontend</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 6 oy</span></p>
+                                                <p class="fee">Narx: <span> 480 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./frontend-uzb.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('foundation_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-7.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('foundation_page')}}" class="category">#IT</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('foundation_page')}}">Kompyuter Savodxonligi</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 3 oy</span></p>
+                                                <p class="fee">Narx: <span> 360 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./foundation-uzb.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('graphic_design_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-8.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('graphic_design_page')}}" class="category">#IT</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('graphic_design_page')}}">Grafik Dizayn</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 4 oy</span></p>
+                                                <p class="fee">Narx: <span> 480 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./graphic.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('math_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-9.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('math_page')}}" class="category">#Fan</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('math_page')}}">Matematika</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 6 oy</span></p>
+                                                <p class="fee">Narx: <span> 250 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./math.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('english_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-10.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('english_page')}}" class="category">#Til</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('english_page')}}">Ingliz tili</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 6 oy</span></p>
+                                                <p class="fee">Narx: <span> 250 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./english.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('russian_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-11.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('russian_page')}}" class="category">#Til</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('russian_page')}}">Rus Tili</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 6 oy</span></p>
+                                                <p class="fee">Narx: <span> 250 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./russian.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 courses-col">
+                                <div class="single-courses-2 mt-30">
+                                    <div class="courses-image">
+                                        <a href="{{url_for ('menthal_page')}}"><img src="{{url_for ('static', filename='images/courses/courses-12.webp')}}" width="270" height="170" alt="courses"></a>
+                                    </div>
+                                    <div class="courses-content">
+                                        <a href="{{url_for ('menthal_page')}}" class="category">#Fan</a>
+                                        <h4 class="courses-title"><a href="{{url_for ('menthal_page')}}">Mental Matematika</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 6 oy</span></p>
+                                                <p class="fee">Narx: <span> 250 000 so'm</span></p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="./register-uzb.html">Online Murojat</a>
+                                            <a class="more" href="./menthal.html">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list">
+                    <div class="courses-wrapper wrapper-2">
+                        <div class="courses-col">
+                            <div class="single-courses-2 courses-list mt-30">
+                                <div class="courses-image">
+                                    <a href="#"><img src="../static/images/courses-list/courses-1.webp" width="320" height="300" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <p class="courses-fee">Narx: <span> $540</span></p>
+
+                                    <div class="courses-content-wrapper">                                        
+                                        <h4 class="courses-title"><a href="courses-details-uzb.html">Computer Science & Engineering</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 4 yil</span></p>
+                                                <p class="credit">Credit: 125</p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="#">Online Murojat</a>
+                                            <a class="more" href="#">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="courses-col">
+                            <div class="single-courses-2 courses-list mt-30">
+                                <div class="courses-image">
+                                    <a href="#"><img src="../static/images/courses-list/courses-2.webp" width="320" height="300" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <p class="courses-fee">Narx: <span> $540</span></p>
+
+                                    <div class="courses-content-wrapper">                                        
+                                        <h4 class="courses-title"><a href="courses-details-uzb.html">Bachelor of Business Administration</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 4 year</span></p>
+                                                <p class="credit">Credit: 125</p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="#">Online Murojat</a>
+                                            <a class="more" href="#">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="courses-col">
+                            <div class="single-courses-2 courses-list mt-30">
+                                <div class="courses-image">
+                                    <a href="#"><img src="../static/images/courses-list/courses-3.webp" width="320" height="300" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <p class="courses-fee">Narx: <span> $540</span></p>
+
+                                    <div class="courses-content-wrapper">                                        
+                                        <h4 class="courses-title"><a href="courses-details-uzb.html">Social & Digital Marketing</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 4 year</span></p>
+                                                <p class="credit">Credit: 125</p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="#">Online Murojat</a>
+                                            <a class="more" href="#">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="courses-col">
+                            <div class="single-courses-2 courses-list mt-30">
+                                <div class="courses-image">
+                                    <a href="#"><img src="../static/images/courses-list/courses-4.webp" width="320" height="300" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <p class="courses-fee">Narx: <span> $540</span></p>
+
+                                    <div class="courses-content-wrapper">                                        
+                                        <h4 class="courses-title"><a href="courses-details-uzb.html">Bachelor of English Literature</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 4 year</span></p>
+                                                <p class="credit">Credit: 125</p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="#">Online Murojat</a>
+                                            <a class="more" href="#">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="courses-col">
+                            <div class="single-courses-2 courses-list mt-30">
+                                <div class="courses-image">
+                                    <a href="#"><img src="../static/images/courses-list/courses-5.webp" width="320" height="300" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <p class="courses-fee">Narx: <span> $540</span></p>
+
+                                    <div class="courses-content-wrapper">                                        
+                                        <h4 class="courses-title"><a href="courses-details-uzb.html">Bachelor of Advance Psychology</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 4 year</span></p>
+                                                <p class="credit">Credit: 125</p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="#">Online Murojat</a>
+                                            <a class="more" href="#">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="courses-col">
+                            <div class="single-courses-2 courses-list mt-30">
+                                <div class="courses-image">
+                                    <a href="#"><img src="../static/images/courses-list/courses-6.webp" width="320" height="300" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <p class="courses-fee">Narx: <span> $540</span></p>
+
+                                    <div class="courses-content-wrapper">                                        
+                                        <h4 class="courses-title"><a href="courses-details-uzb.html">Bachelor of Fashion Design</a></h4>
+                                        <div class="duration-rating">
+                                            <div class="duration-fee">
+                                                <p class="duration">Davomiylik: <span> 4 year</span></p>
+                                                <p class="credit">Credit: 125</p>
+                                            </div>
+                                            <div class="rating">
+                                                <span>Reyting: </span>
+                                                <ul class="star">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-link">
+                                            <a class="apply" href="#">Online Murojat</a>
+                                            <a class="more" href="#">Yana Malumot <i class="fal fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Top Course Ends ======-->
+   
+{% endblock %}
+

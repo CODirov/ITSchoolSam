@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block main %}
+    
+    <!--====== Page Banner Start ======-->
+
+    <section class="page-banner">
+        <div class="page-banner-bg bg_cover" style="background-image: url({{url_for ('static', filename='images/page-banner.webp')}});">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h2 class="title">Teacher Details</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Page Banner Ends ======-->
+
+    <!--====== Teacher Details Start ======-->
+
+    <section class="teacher-details">
+        <div class="container">
+            <div class="row teachers-row justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-8 teachers-col">
+                    <div class="single-teacher-details mt-50 text-center">
+                        <div class="teacher-social">
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="teacher-image">
+                                <a href="teacher-details.html">
+                                <img src="{{url_for ('static', filename='images/teachers/teacher-2.webp')}}" width="373" height="503" alt="teacher">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 teachers-col">
+                    <div class="teacher-details-content mt-45">
+                        <h4 class="teacher-name">Zesica Luice</h4>
+                        <span class="designation">Assistant Professor</span>
+                        <span class="department">Department of Business Administration</span>
+                        <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need These cases are perfectly  simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents</p>
+                        <ul class="teacher-contact">
+                            <li><strong>Email:</strong> <a href="#">mailme@example.com</a></li>
+                            <li><strong>Phone:</strong> <a href="#">+98745 325 698</a></li>
+                            <li><strong>Skype:</strong> <a href="#">zesica.luice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teacher-details-tab">
+                <ul class="nav nav-justified">
+                    <li class="nav-item"><a class="active" data-bs-toggle="tab" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a data-bs-toggle="tab" href="#educational">Educational Qualification</a></li>
+                    <li class="nav-item"><a data-bs-toggle="tab" href="#achievements ">Achievements </a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="experience">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Head of Department</h4>
+                                    <p>Business Administration</p>
+                                    <p>Boston University</p>
+                                    <p>2015 to till now</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Professor</h4>
+                                    <p>Business Administration</p>
+                                    <p>Boston University</p>
+                                    <p>2012 to 2013</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Assistant Professor</h4>
+                                    <p>Business Administration</p>
+                                    <p>Boston University</p>
+                                    <p>2010 to 2012</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Lecturer</h4>
+                                    <p>Business Administration</p>
+                                    <p>Boston University</p>
+                                    <p>2008 to 2010</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="educational">                        
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">PhD. in Business Studies</h4>
+                                    <p>Boston University</p>
+                                    <p>2005 - 2006</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Diploma in It Professional</h4>
+                                    <p>Boston University</p>
+                                    <p>2007 to 2008</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Diploma in Social Media</h4>
+                                    <p>Yale University</p>
+                                    <p>2010 to 2012</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Master in Business Studies</h4>
+                                    <p>Boston University</p>
+                                    <p>2003 - 2004</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Diploma in Communication Skills</h4>
+                                    <p>Yale University</p>
+                                    <p>2009 - 2010</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Diploma in Project Management</h4>
+                                    <p>Boston University</p>
+                                    <p>2012 - 2013</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Bachelor of Business Administration</h4>
+                                    <p>Stanford University</p>
+                                    <p>1999 - 2003</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Diploma in Team Management</h4>
+                                    <p>Boston University</p>
+                                    <p>2007 - 2008</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="achievements">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Best Recherche Award 2019</h4>
+                                    <p>Lorem Ipsum need These cases are perfectly  simple and easy to distinguish. In a free hour, when our power of choice.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Faculty Gold Medalist 2018</h4>
+                                    <p>Lorem Ipsum need These cases are perfectly  simple and easy to distinguish. In a free hour, when our power of choice.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-content-tab">
+                                    <h4 class="title">Best Teacher Award 2015</h4>
+                                    <p>Lorem Ipsum need These cases are perfectly  simple and easy to distinguish. In a free hour, when our power of choice.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--====== Teacher Details Ends ======-->
+    
+    {% endblock %}

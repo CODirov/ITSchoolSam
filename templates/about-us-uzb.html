@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block main %}
+    
+    <!--====== Page Banner Start ======-->
+
+    <section class="page-banner">
+        <div class="page-banner-bg bg_cover" style="background-image: url({{url_for ('static', filename='images/page-banner.webp')}});">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h2 class="title">Biz Haqimizda</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Page Banner Ends ======-->
+    
+    <!--====== About Start ======-->
+
+    <section class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-content mt-40">
+                        <h2 class="about-title">Eng Yaxshi <span>Ta'lim</span> </h2>
+                        <span class="line"></span>
+                        <p>Hatto bir oz ishonarli. Agar siz Lorem Ipsum parchasidan foydalanmoqchi bo'lsangiz, o'z-o'zidan og'riqni olishni xohlashingiz kerak, chunki bu og'riq, sizning o'rganishingiz uchun ko'p og'riqlar paydo bo'lishini xohlaydi. <br> <br> Hatto bir oz ishonarli. Agar siz Lorem Ipsum parchasidan foydalanmoqchi bo'lsangiz, o'z-o'zidan og'riqni olishni xohlashingiz kerak,</p>
+                        <a href="#" class="main-btn">O'rganish</a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-image mt-50">
+                        <div class="single-image image-1">
+                            <img src="{{url_for ('static', filename='images/about/about-1.webp')}}" width="290" height="290" alt="about">
+                        </div>
+                        <div class="single-image image-2">
+                            <img src="{{url_for ('static', filename='images/about/about-2.webp')}}" width="225" height="225" alt="about">
+                        </div>
+                        <div class="single-image image-3">
+                            <img src="{{url_for ('static', filename='images/about/about-3.webp')}}" width="190" height="190" alt="about">
+                        </div>
+                        <div class="single-image image-4">
+                            <img src="{{url_for ('static', filename='images/about/about-4.webp')}}" width="140" height="140" alt="about">
+                        </div>
+
+                        <div class="about-icon icon-1">
+                            <img src="{{url_for ('static', filename='images/about/icon/icon-1.webp')}}" width="46" height="46" alt="icon">
+                        </div>
+                        <div class="about-icon icon-2">
+                            <img src="{{url_for ('static', filename='images/about/icon/icon-2.webp')}}" width="46" height="46" alt="icon">
+                        </div>
+                        <div class="about-icon icon-3">
+                            <img src="{{url_for ('static', filename='images/about/icon/icon-3.webp')}}" width="46" height="46" alt="icon">
+                        </div>
+                        <div class="about-icon icon-4">
+                            <img src="{{url_for ('static', filename='images/about/icon/icon-4.webp')}}" width="46" height="46" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== About Ends ======-->
+
+    <!--====== Features Start ======-->
+
+    <div class="features-area-2 ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="features-image-2">
+                        <img src="{{url_for ('static', filename='images/features-2.webp')}}" width="342" height="524" alt="Features">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="features-items">
+                        <div class="features-items-wrapper">
+                            <div class="single-features-item d-flex align-items-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="item-icon">
+                                    <img src="{{url_for ('static', filename='images/icon/icon-2-1.webp')}}" width="70" height="70" alt="Icon">
+                                </div>
+                                <div class="item-content media-body">
+                                    <p>250+ <br> Kurslar</p>
+                                </div>
+                            </div>
+                            <div class="single-features-item d-flex align-items-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="item-icon">
+                                    <img src="{{url_for ('static', filename='images/icon/icon-2-2.webp')}}" width="70" height="70" alt="Icon">
+                                </div>
+                                <div class="item-content media-body">
+                                    <p>Malakaga qarab<br> chegirmalar</p>
+                                </div>
+                            </div>
+                            <div class="single-features-item d-flex align-items-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="item-icon">
+                                    <img src="{{url_for ('static', filename='images/icon/icon-2-3.webp')}}" width="70" height="70" alt="Icon">
+                                </div>
+                                <div class="item-content media-body">
+                                    <p>Online <br> Ta'lim</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-items-wrapper">
+                            <div class="single-features-item d-flex align-items-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="item-icon">
+                                    <img src="{{url_for ('static', filename='images/icon/icon-2-4.webp')}}" width="70" height="70" alt="Icon">
+                                </div>
+                                <div class="item-content media-body">
+                                    <p>Mutahasis <br> O'qituvchilar</p>
+                                </div>
+                            </div>
+                            <div class="single-features-item d-flex align-items-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="item-icon">
+                                    <img src="{{url_for ('static', filename='images/icon/icon-2-5.webp')}}" width="70" height="70" alt="Icon">
+                                </div>
+                                <div class="item-content media-body">
+                                    <p>
+                                        Kursdan keyin
+                                         <br> Sertifikatlash</p>
+                                </div>
+                            </div>
+                            <div class="single-features-item d-flex align-items-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="item-icon">
+                                    <img src="{{url_for ('static', filename='images/icon/icon-2-6.webp')}}" width="70" height="70" alt="Icon">
+                                </div>
+                                <div class="item-content media-body">
+                                    <p>Prospektni  <br> yuklab oling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== Features Ends ======-->
+
+   
+
+    <!--====== Teachers Start ======-->
+
+    <section class="teachers-area mb-100">
+        <div class="container">            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title mt-40">
+                        <h2 class="title">
+                            O'qituvchilarimiz bilan tanishing</h2>
+                        <p>
+                            Hatto bir oz ishonarli. Agar siz boradigan bo'lsangiz, Lorem Ipsum nee parchasidan foydalaning</p>
+                    </div>
+                </div>
+            </div>
+            <div class="teachers-wrapper">
+                <div class="row teachers-row">
+                    <div class="col-md-4 col-sm-6 teachers-col">
+                        <div class="single-teacher mt-30 text-center">
+                            <div class="teacher-social">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teacher-image">
+                                <a href="teacher-details.html">
+                                    <img src="{{url_for ('static', filename='images/teachers/DSC_1397+.webp')}}" width="266" height="359" alt="teacher">
+                                </a>
+                            </div>
+                            <div class="teacher-content">
+                                <h4 class="name"><a href="teacher-details.html">Begzod</a></h4>
+                                <span class="designation">Fan O'qituvchisi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 teachers-col">
+                        <div class="single-teacher mt-30 text-center">
+                            <div class="teacher-social">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teacher-image">
+                                <a href="teacher-details.html">
+                                    <img src="{{url_for ('static', filename='images/teachers/photo_2022-09-22_22-09-33.webp')}}" width="266" height="359" alt="teacher">
+                                </a>
+                            </div>
+                            <div class="teacher-content">
+                                <h4 class="name"><a href="teacher-details.html">Roberto Carlos</a></h4>
+                                <span class="designation">Fan O'qituvchisi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 teachers-col">
+                        <div class="single-teacher mt-30 text-center">
+                            <div class="teacher-social">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teacher-image">
+                                <a href="teacher-details.html">
+                                    <img src="{{url_for ('static', filename='images/teachers/teacher-3.webp')}}" width="266" height="359" alt="teacher">
+                                </a>
+                            </div>
+                            <div class="teacher-content">
+                                <h4 class="name"><a href="teacher-details.html">Roberto Carlos</a></h4>
+                                <span class="designation">Fan O'qituvchisi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Teachers Ends ======-->
+
+{% endblock %}

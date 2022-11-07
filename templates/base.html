@@ -1,0 +1,201 @@
+<!doctype html>
+<html class="no-js" lang="uz">
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>IT SCHOOL</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{{url_for ('static', filename='images/favicon.webp')}}" type="image/webp">
+    
+        
+    <!-- CSS
+    ============================================ -->
+
+    <!--===== Vendor CSS (Bootstrap & Icon Font) =====-->
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/plugins/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/plugins/fontawesome.min.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/plugins/default.css')}}">
+
+
+    <!--===== Plugins CSS (All Plugins Files) =====-->
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/plugins/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/plugins/slick.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/plugins/magnific-popup.css')}}">
+
+    <!--====== Main Style CSS ======-->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/style.min.css')}}">
+    
+</head>
+
+<body>
+    <header class="header-area">
+        <div id="navigation" class="navigation navigation-landscape">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="header-logo">
+                            <a href="{{url_for ('home_page')}}"><img src="{{url_for ('static', filename='images/logo.webp')}}" width="80" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 position-static">
+                        <div class="nav-toggle"></div>
+                        <nav class="nav-menus-wrapper">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a class="" href="{{url_for ('home_page')}}">Asosiy</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for ('about_page')}}">Biz Haqimizda</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for ('courses_page')}}">Kurslar</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li><a href="{{url_for ('frontend_course_page')}}">Frontend</a></li>
+                                        <li><a href="{{url_for ('backend_course_page')}}">Backend</a></li>
+                                        <li><a href="{{url_for ('graphic_design_page')}}">Grafik Dizayn</a></li>
+                                        <li><a href="{{url_for ('foundation_page')}}">Kompyuter Savodxonligi</a></li>
+                                        <li><a href="{{url_for ('math_page')}}">Matematika</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="{{url_for ('teachers_page')}}">O'qituvchilar</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for ('gallery_page')}}">Rasmlar</a>
+                                </li>
+                                <li><a href="{{url_for ('contact_page')}}">Aloqa</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 position-static">
+                        <div class="footer-widget-wrapper justify-content-end">
+                            <div class="footer-social">
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/itschoolsam/"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://t.me/itschoolsam"><i class="fab fa-telegram"></i></a></li>
+                                    <li><a href="https://www.instagram.com/it_school.uz/"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    {%block main%}
+    
+    {%endblock main%}
+
+    <!--====== Footer Start ======-->
+
+    <footer class="footer-area bg_cover" style="background-image: url({{url_for ('static', filename='images/counter-bg.webp')}});">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Bizning Markaz</h4>
+                            <ul class="link-list">
+                                <li><a href="{{url_for ('about_page')}}">Biz Haqimizda</a></li>
+                                <li><a href="{{url_for ('gallery_page')}}">Rasmlar</a></li>
+                                <li><a href="{{url_for ('teachers_page')}}">O'qituvchilar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Kurslar</h4>
+                            <ul class="link-list">
+                                <li><a href="{{url_for ('frontend_course_page')}}">Frontend</a></li>
+                                <li><a href="{{url_for ('backend_course_page')}}">Backend</a></li>
+                                <li><a href="{{url_for ('graphic_design_page')}}">Grafik Dizayner</a></li>
+                                <li><a href="{{url_for ('foundation_page')}}">Kompyuter Savodxonligi</a></li>
+                                <li><a href="{{url_for ('math_page')}}">Matematika</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Foydali Havola</h4>
+                            <ul class="link-list">
+                                <li><a href="{{url_for ('home_page')}}">Bosh Sahifa</a></li>
+                                <li><a href="{{url_for ('about_page')}}">Biz Haqimizda</a></li>
+                                <li><a href="{{url_for ('courses_page')}}">Kurslar</a></li>
+                                <li><a href="{{url_for ('teachers_page')}}">O'qituvchilar</a></li>
+                                <li><a href="{{url_for ('gallery_page')}}">Rasmlar</a></li>
+                                <li><a href="{{url_for ('contact_page')}}">Aloqa</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Aloqa</h4>
+                            <ul class="link-list">
+                                <li>
+                                    <p>Adres: 35 A, Mirzo Ulugbek ko'chasi, Samarkand</p>
+                                </li>
+                                <li>
+                                    <p><a href="tel:+998999413030">Tel: +998(99) 941-30-30</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="mailto://info@itschoolsam.uz">info@itschoolsam.uz</a></p>
+                                    <p><a href="#">www.itschoolsam.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widget-wrapper">
+                    <div class="footer-social">
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/itschoolsam/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://t.me/itschoolsam"><i class="fab fa-telegram"></i></a></li>
+                            <li><a href="https://www.instagram.com/it_school.uz/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p>&copy; 2022 <span> ITSCHOOL </span> Made by <a href="https://theprogress.uz/">Theprogress</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--====== Footer Ends ======-->
+
+    <a href="#" class="back-to-top"><i class="fal fa-chevron-up"></i></a>
+
+    <!--====== Jquery js ======-->
+    <script src="{{url_for ('static', filename='js/vendor/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/vendor/modernizr-3.7.1.min.js')}}"></script>
+    
+    <!--====== All Plugins js ======-->
+    <script src="{{url_for ('static', filename='js/plugins/popper.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/plugins/bootstrap.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/plugins/slick.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/plugins/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/plugins/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/plugins/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/plugins/wow.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/plugins/ajax-contact.js')}}"></script>
+    
+
+    <!--====== Main Activation  js ======-->
+    <script src="{{url_for ('static', filename='js/main.js')}}"></script>
+
+    
+</body>
+
+
+<!-- Mirrored from template.hasthemes.com/edumate-v1/edumate/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Feb 2022 16:27:01 GMT -->
+</html>
